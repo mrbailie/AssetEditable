@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asset Editable Test</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" />
+    <link rel="stylesheet" href="select2-bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="AssetEditables.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Asset Name</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Details</h2>
+            <hr />
+        </div>
+    </div>
+    <div class="row form-horizontal">
+        <div class="col-lg-6">
+            <div id="Manufacturer" class="asset-editable" data-name="Manufacturer" data-db-text="APC"></div>
+            <div id="Model" class="asset-editable" data-name="Model" data-db-text="SU48R3XLBP"></div>
+            <div id="StateTag" class="asset-editable" data-name="State Tag" data-db-text=""></div>
+            <div id="CapitalAsset" class="asset-editable" data-name="Capital Asset" data-db-text="No"></div>
+            <div id="PurchaseOrder" class="asset-editable" data-name="Purchase Order" data-db-text="None" data-db-id=1345 data-action-name="GetPurchaseOrders"></div>
+            <div id="Description" class="asset-editable" data-name="Description" data-db-text="External Battery Pack"></div>
+        </div>
+        <div class="col-lg-6">
+            <div id="ShippedOn" class="asset-editable" data-name="Shipped On" data-db-text="APC"></div>
+            <div id="Grant" class="asset-editable asset-editable-id" data-name="Grant" data-db-text="TVSTAA" data-db-id=3 data-action-name="GetGrants"></div>
+            <div id="AssignedUser" class="asset-editable" data-name="Assigned User" data-db-text="Mason Bailie"></div>
+            <div id="Department" class="asset-editable" data-name="Department" data-db-text="Information Services"></div>
+            <div id="Location" class="asset-editable" data-name="Location" data-db-text="T515"></div>
+            <div id="Status" class="asset-editable asset-editable-id" data-name="Status" data-db-text="Active" data-db-id=1 data-action-name="GetAssetStatusTypes.json"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+
+<script src="Editable.js"></script>
+<script src="AssetEditables.js"></script>
+
+<script>
+    var assetEditables = new AssetEditables();
+    assetEditables.Initialize();
+</script>
+
+</html>

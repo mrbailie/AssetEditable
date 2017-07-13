@@ -1,0 +1,6 @@
+[
+  {"Id":1,"Text":"Active","BootstrapColor":"success"},
+  {"Id":2,"Text":"Not Found","BootstrapColor":"danger"},
+  {"Id":3,"Text":"Surplussed","BootstrapColor":"default"},
+  {"Id":4,"Text":"RMA (Returned)","BootstrapColor":"default"},
+  {"Id":5,"Text":"Unknown","BootstrapColor":"default"}]
